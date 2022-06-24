@@ -1,0 +1,11 @@
+[Unit]
+Description=Exporter
+Documentation=https://www.yahoo.co.jp
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env java -jar /usr/local/bin/app.jar
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
